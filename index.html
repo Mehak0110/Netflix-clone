@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="banner">
+
+    <video autoplay muted loop id="bg-video">
+        <source src="public/netflicclone.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+        <img src="public/image.jpg" class="logo">
+        <button class="signin-btn">Sign In</button>
+        <div class="top-right">
+
+    <button class="signin-btn">
+        Sign In
+    </button>
+
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search movies">
+    </div>
+
+</div>
+    </nav>
+
+    <div class="hero">
+        <h1>Unlimited movies, TV shows and more.</h1>
+
+        <h3>Watch anywhere. Cancel anytime.</h3>
+
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <div class="email-signup">
+            <input type="email" placeholder="Email address">
+            <button>Get Started ></button>
+        </div>
+    </div>
+
+</div>
+<section class="filters">
+
+    <h2>Browse Movies</h2>
+
+    <div class="filter-container">
+
+        <div class="filter-container">
+
+    <select>
+        <option>🌎 Country</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>Korea</option>
+    </select>
+
+    <select>
+        <option>🎙 Language</option>
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Tamil</option>
+    </select>
+
+    <select>
+        <option>📅 Year</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+    </select>
+
+    <select>
+        <option>🎬 Genre</option>
+        <option>Action</option>
+        <option>Comedy</option>
+        <option>Drama</option>
+        <option>Thriller</option>
+    </select>
+    </div>
+    
+
+
+</section>
+<div class="separator"></div>
+<section class="movies">
+    <h2>Trending Now</h2>
+
+    <div class="movie-row">
+        <img src="public/yo1.jpg" alt ="Plane">
+        <img src="public/yo3.webp" alt="Off Campus">
+        <img src="public/yo4.avif" alt="hierarchy">
+        <img src="public/yo5.jpg" alt="Strong girl Nam-soon">
+    </div>
+</section>
+<section class="movies">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-row">
+        <img src="public/yoo.jpg" alt="Boyhood">
+        <img src="public/yoo1.jpg" alt="ANWESHIPPIN KANDETHUM">
+        <img src="public/yoo2.jpg" alt="Home Sweet Home">
+    </div>
+</section>
+
+<section class="movies">
+    <h2>Action Movies</h2>
+    <div class="movie-row">
+        <img src="public/yoo4.jpg" alt="Damsel">
+        <img src="public/yoo5.jpg" alt="Extraction">
+        <img src="public/yoo6.jpg" alt="Ice Road">
+    </div>
+</section>
+
+<section class="movies">
+    <h2>Top Rated</h2>
+    <div class="movie-row">
+        <img src="public/yoo7.jpg" alt="Saiyaara">
+        <img src="public/yoo8.avif" alt="Jaane jaan">
+        <img src="public/yoo9.webp" alt="Pink">
+    </div>
+</section>
+
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="question">
+            What is Netflix?
+        </button>
+
+        <div class="answer">
+            Netflix is a streaming platform that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+        </div>
+    </div>
+</section>
+    <section class="faq">
+
+    <div class="faq-item">
+        <button class = "question">
+       How much does Netflix cost?
+        </button>
+        <div class ="answer">
+            Netflix subscription plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+        </div>
+    </div>
+    </section>
+    <section class="faq">
+
+    <div class="faq-item">
+        <button class = "question">
+       Where can I watch?
+        </button>
+        <div class ="answer">
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+        </div>
+    </div>
+    </section>
+    <section class="faq">
+
+    <div class="faq-item">
+        <button class = "question">
+       how do i cancel
+        </button>
+        <div class ="answer">
+            Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+        </div>
+    </div>
+    </section>
+    
+</section>
+<footer>
+    <p>Questions? Contact us.</p>
+
+    <div class="footer-links">
+        <a href="#">FAQ</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Use</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
