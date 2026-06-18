@@ -166,8 +166,13 @@ nav{
     display:flex;
     gap:20px;
     overflow-x:auto;
+    scroll-behavior: smooth;
+    scrollbar-width:none;
+    -ms-overflow-style:none; 
 }
-
+.movie-row::-webkit-scrollbar{
+    display:none;           
+}
 .movie-row img{
     width:250px;
     height:350px;
