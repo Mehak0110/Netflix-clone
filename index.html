@@ -14,9 +14,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <div class="banner">
 
     <video autoplay muted loop id="bg-video">
-        <source src="public/netflicclone.mp4" type="video/mp4">
+        <source src="public/netflicclone.mp4" type="video/mp4"
+        id="videoSource">
     </video>
+<div class="featured-content" id="featuredContent">
 
+    <h1>If Wishes Could Kill</h1>
+
+    <p>
+        A gripping K-drama filled with mystery, romance,
+        and unexpected twists.
+    </p>
+
+    <div class="featured-buttons">
+        <button class="play-btn">▶ Play</button>
+        <button class="info-btn">ℹ More Info</button>
+    </div>
+
+</div>
 <nav>
     <img src="public/image.jpg" class="logo">
 
@@ -25,10 +40,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <input type="text" id="search" placeholder="Search movies">
     </div>
 
-    <button class="signin-btn">Sign In</button>
+   <div class="user-menu">
+
+    <button class="signin-btn" id="loginBtn">
+        Sign In
+    </button>
+
+    <div class="dropdown" id="dropdown">
+
+        <button id="demoLogin">
+            Sign In Demo
+        </button>
+
+        <button id="logoutBtn">
+            Sign Out
+        </button>
+
+    </div>
+
+</div>
 </nav>
 
-    <div class="hero">
+    <div class="hero" id ="hero">
         <h1>Unlimited movies, TV shows and more.</h1>
 
         <h3>Watch anywhere. Cancel anytime.</h3>

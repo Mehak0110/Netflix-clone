@@ -38,6 +38,7 @@ body{
 nav{
     position:relative;
     z-index:2;
+    background:black;
 }
 .banner::after{
     content:"";
@@ -93,7 +94,10 @@ nav{
     font-size:16px;
     font-weight:600;
 }
-
+.signin-btn i{
+    margin-right:8px;
+    font-size:20px;
+}
 .signin-btn:hover,
 .email-signup button:hover{
     background:#c11119;
@@ -109,6 +113,7 @@ nav{
     text-align:center;
     width:90%;
     max-width:900px;
+    background:transparent;
     z-index:5;
 }
 
@@ -250,7 +255,7 @@ nav{
     outline:none;
     color:white;
     width:100%;
-    font-size:18px;
+    font-size:16px;
 }
 .top-right{
     position:absolute;
@@ -346,4 +351,286 @@ nav{
 
 .filter-container select:hover{
     background:#2454a0;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    /* Navbar */
+    nav{
+        padding:15px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        width:100px;
+    }
+
+    .search-box{
+        width:90%;
+    }
+
+    .signin-btn{
+        padding:10px 20px;
+        font-size:14px;
+    }
+
+    /* Hero Section */
+    .hero{
+        width:95%;
+        top:55%;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+        line-height:1.2;
+    }
+
+    .hero h3{
+        font-size:1.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    /* Email Signup */
+    .email-signup{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .email-signup input{
+        width:100%;
+    }
+
+    .email-signup button{
+        width:100%;
+    }
+
+    /* Filters */
+    .filters{
+        padding:30px 20px;
+    }
+
+    .filter-container{
+        flex-direction:column;
+    }
+
+    .filter-container select{
+        width:100%;
+        min-width:auto;
+    }
+
+    /* Movies */
+    .movies{
+        padding:40px 20px;
+    }
+
+    .movies h2{
+        font-size:1.5rem;
+    }
+
+    .movie-row{
+        gap:10px;
+    }
+
+    .movie-row img{
+        width:150px;
+        height:220px;
+    }
+
+    /* FAQ */
+    .faq{
+        width:95%;
+    }
+
+    .faq h2{
+        font-size:28px;
+    }
+
+    .question{
+        font-size:18px;
+        padding:18px;
+    }
+
+    .answer{
+        font-size:15px;
+    }
+
+    /* Footer */
+    .footer-links{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+}
+.movie-card{
+    min-width:250px;
+}
+
+@media(max-width:768px){
+
+    .movie-card{
+        min-width:150px;
+        max-width:150px;
+    }
+
+    .movie-card img{
+        width:150px;
+        height:220px;
+    }
+
+    .movie-card h3{
+        font-size:14px;
+    }
+
+    .movie-card p{
+        font-size:12px;
+    }
+}
+.user-menu{
+    position:relative;
+}
+
+.dropdown{
+    display:none;
+
+    position:absolute;
+    top:60px;
+    right:0;
+
+    width:180px;
+
+    background:rgb(247, 247, 243);
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.dropdown button{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:black;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.dropdown button:hover{
+    background:#333;
+}
+
+.dropdown.show{
+    display:block;
+}
+
+
+.featured-content{
+    position:absolute;
+
+    left:40px;
+    bottom:80px;
+
+    top:auto;
+    transform:none;
+
+    z-index:5;
+
+    max-width:500px;
+
+    color:white;
+
+    display:none;
+}
+.featured-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,.8);
+}
+
+.featured-content p{
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+    color:#ddd;
+}
+
+.featured-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.play-btn{
+    background:white;
+    color:black;
+
+    border:none;
+
+    padding:12px 30px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.info-btn{
+    background:rgba(109,109,110,.7);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 30px;
+
+    font-size:18px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.play-btn:hover{
+    background:#e6e6e6;
+}
+
+.info-btn:hover{
+    background:rgba(109,109,110,.4);
+}
+
+
+@media(max-width:768px){
+
+    .featured-content{
+        left:20px;
+        max-width:90%;
+    }
+
+    .featured-content h1{
+        font-size:40px;
+    }
+
+    .featured-content p{
+        font-size:14px;
+    }
+
+    .featured-buttons{
+        flex-wrap:wrap;
+    }
 }

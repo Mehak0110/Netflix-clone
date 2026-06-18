@@ -41,7 +41,7 @@ questions.forEach(btn => {
 
 });
 
-const API_KEY = "4927b112";
+const API_KEY = "86773046";
 
 async function loadMovies() {
     const response = await fetch(
@@ -84,7 +84,12 @@ async function fetchCategory(keyword, containerId) {
 
     const container = document.getElementById(containerId);
 
-    container.innerHTML = "";
+container.innerHTML = "";
+
+if (!data.Search) {
+    container.innerHTML = "No movies found";
+    return;
+}
 
     for(const movie of data.Search){
 
@@ -110,5 +115,53 @@ async function fetchCategory(keyword, containerId) {
 
 fetchCategory("avengers", "trendingMovies");
 fetchCategory("batman", "popularMovies");
-fetchCategory("action", "actionMovies");
-fetchCategory("marvel", "topRatedMovies");
+fetchCategory("fast", "actionMovies");
+fetchCategory("spider", "topRatedMovies");
+const loginBtn = document.getElementById("loginBtn");
+
+const dropdown = document.getElementById("dropdown");
+
+loginBtn.addEventListener("click", () => {
+
+    dropdown.classList.toggle("show");
+
+});
+
+const demoLogin = document.getElementById("demoLogin");
+
+demoLogin.addEventListener("click", () => {
+
+    document.getElementById("hero").style.display = "none";
+
+    document.getElementById("featuredContent").style.display = "block";
+
+    loginBtn.innerHTML = `
+        <i class="fa-solid fa-circle-user"></i> Mehak
+    `;
+
+    const video = document.getElementById("bg-video");
+    const source = document.getElementById("videoSource");
+
+    source.src = "public/video2.mp4";
+
+    video.load();
+
+});
+const logoutBtn = document.getElementById("logoutBtn");
+
+logoutBtn.addEventListener("click", () => {
+
+    document.getElementById("hero").style.display = "block";
+
+    document.getElementById("featuredContent").style.display = "none";
+
+    loginBtn.innerHTML = "Sign In";
+
+    const video = document.getElementById("bg-video");
+    const source = document.getElementById("videoSource");
+
+    source.src = "public/netflicclone.mp4";
+
+    video.load();
+
+});
